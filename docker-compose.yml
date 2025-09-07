@@ -1,14 +1,11 @@
 version: '3'
 services:
-  nginx:
+  static-site:
     image: nginx:alpine
-    container_name: static-nginx
+    container_name: static-site
     ports:
-      - "8080:80"
-      - "8443:443"
+      - "8080:80"  # ホストの8080→コンテナの80
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./index.html:/usr/share/nginx/html/index.html:ro
       - ./icons:/usr/share/nginx/html/icons:ro
-      - /etc/letsencrypt:/etc/letsencrypt:ro
     restart: always

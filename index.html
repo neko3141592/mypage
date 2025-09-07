@@ -1,94 +1,111 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts: JetBrains Mono -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <title>neko3141592</title>
-        <style>
-            .jp-mono {
-                font-family: 'IBM Plex Sans JP', 'JetBrains Mono', 'Fira Mono', monospace;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+            <!-- Google Fonts: JetBrains Mono -->
+            <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+            <title>neko3141592 | ポートフォリオ・技術紹介</title>
+            <meta name="description" content="neko3141592のポートフォリオサイト。技術スタックや制作物を紹介しています。">
+            <meta name="keywords" content="neko3141592, ポートフォリオ, 技術, エンジニア, Web, Docker, Nginx, Tailwind CSS">
+            <!-- OGP -->
+            <meta property="og:title" content="neko3141592 | ポートフォリオ・技術紹介">
+            <meta property="og:description" content="neko3141592のポートフォリオサイト。技術スタックや制作物を紹介しています。">
+            <meta property="og:image" content="https://neko3141592.net/ogp.png">
+            <meta property="og:url" content="https://neko3141592.net">
+            <meta property="og:type" content="website">
+            <!-- 構造化データ -->
+            <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "neko3141592 ポートフォリオ",
+            "url": "https://neko3141592.net"
             }
-        </style>
-</head>
-<body class="font-mono" style="font-family: 'IBM Plex Mono JP', 'JetBrains Mono', 'Fira Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;">
-    <main>
-    <section class="bg-gradient-to-r from-cyan-400 via-teal-400 to-green-300 text-white min-h-screen flex justify-center items-center shadow">
-            <div class="container mx-auto px-4 flex flex-col items-center">
-                <h1 class="text-4xl font-bold mb-2">neko3141592</h1>
-                <p class="text-lg">Web &amp; App Developer</p>
-            </div>
-    </section>
-    <div>
-        <section class="bg-gray-50 container px-8 mx-auto px-4 min-h-[50vh] flex flex-col justify-center">
-            <h2 class="text-3xl sm:text-4xl font-semibold mb-6 jp-mono">私について</h2>
-            <p class="text-gray-700 text-lg jp-mono">こんにちは、<span class="font-bold">neko3141592</span>です。<br>現在高校1年生で、Web制作やアプリ開発をしています。</p>
+            </script>
+            <style>
+                .jp-mono {
+                    font-family: 'IBM Plex Sans JP', 'JetBrains Mono', 'Fira Mono', monospace;
+                }
+            </style>
+    </head>
+    <body class="font-mono" style="font-family: 'IBM Plex Mono JP', 'JetBrains Mono', 'Fira Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;">
+        <main>
+        <section class="bg-gradient-to-r from-cyan-400 via-teal-400 to-green-300 text-white min-h-screen flex justify-center items-center shadow">
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <h1 class="text-4xl sm:text-6xl font-bold mb-2">neko3141592</h1>
+                    <p class="text-lg">Web &amp; App Developer</p>
+                </div>
         </section>
-        <section class="bg-black">
-            <div class="container mx-auto px-12 min-h-[50vh] flex flex-col justify-center ">
-                <h2 class="text-center text-3xl sm:text-4xl font-semibold mb-6 jp-mono text-white">主な技術スタック</h2>
-                    <ul class="flex flex-row flex-wrap gap-4 justify-center items-center text-gray-800 jp-mono">
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/python.svg" alt="Python" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/typescript.svg" alt="TypeScript" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/react.svg" alt="React" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/vue.svg" alt="Vue" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/mongodb.svg" alt="MongoDB" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/firebase.svg" alt="MongoDB" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                    <li class="flex flex-col items-center rounded px-2 py-2">
-                        <img src="./icons/docker.svg" alt="Docker" class="w-8 sm:w-10 md:w-12 h-auto" />
-                    </li>
-                </ul>
-                <p class="text-gray-500 text-center mt-4">その他...</p>
-            </div>
-        </section>
-        <section class="bg-gray-50 py-12">
-            <div class="container mx-auto px-8 min-h-[50vh] flex flex-col justify-center ">
-                <h2 class="text-center text-3xl sm:text-4xl font-semibold mb-8 jp-mono text-gray-900">制作物</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 jp-mono">
-                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between">
-                        <h3 class="text-xl font-bold mb-2">134th 海城祭 『澪 -MIO-』</h3>
-                        <p class="text-gray-700 mb-2">Webサイトの一部機能を実装</p>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between">
-                        <h3 class="text-xl font-bold mb-2">LINEbot 茶 殿子須</h3>
-                        <p class="text-gray-700 mb-2">LINEのメッセージ自動応答Botを開発</p>
+        <div>
+            <section class="bg-gray-50 container px-8 mx-auto px-4 min-h-[50vh] flex flex-col justify-center">
+                <h2 class="text-3xl sm:text-4xl font-semibold mb-6 jp-mono">私について</h2>
+                <p class="text-gray-700 text-lg jp-mono">こんにちは、<span class="font-bold">neko3141592</span>です。<br>現在高校1年生で、Web制作やアプリ開発をしています。</p>
+            </section>
+            <section class="bg-black">
+                <div class="container mx-auto px-12 min-h-[50vh] flex flex-col justify-center ">
+                    <h2 class="text-center text-3xl sm:text-4xl font-semibold mb-6 jp-mono text-white">主な技術スタック</h2>
+                        <ul class="flex flex-row flex-wrap gap-4 justify-center items-center text-gray-800 jp-mono">
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/python.svg" alt="Python" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/typescript.svg" alt="TypeScript" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/react.svg" alt="React" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/vue.svg" alt="Vue" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/mongodb.svg" alt="MongoDB" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/firebase.svg" alt="MongoDB" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                        <li class="flex flex-col items-center rounded px-2 py-2">
+                            <img src="./icons/docker.svg" alt="Docker" class="w-8 sm:w-10 md:w-12 h-auto" />
+                        </li>
+                    </ul>
+                    <p class="text-gray-500 text-center mt-4">その他...</p>
+                </div>
+            </section>
+            <section class="bg-gray-50 py-12">
+                <div class="container mx-auto px-8 min-h-[50vh] flex flex-col justify-center ">
+                    <h2 class="text-center text-3xl sm:text-4xl font-semibold mb-8 jp-mono text-gray-900">制作物</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 jp-mono">
+                        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                            <h3 class="text-xl font-bold mb-2">134th 海城祭 『澪 -MIO-』</h3>
+                            <p class="text-gray-700 mb-2">Webサイトの一部機能を実装</p>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                            <h3 class="text-xl font-bold mb-2">LINEbot 茶 殿子須</h3>
+                            <p class="text-gray-700 mb-2">LINEのメッセージ自動応答Botを開発</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    </main>
-        <footer class="bg-gray-100 py-6">
-            <div class="container mx-auto px-4 flex flex-col justify-between items-center">
-                <span class="text-sm ">&copy; 2025 neko3141592</span>
-            </div>
-        </footer>
-        <div class="fixed bottom-4 right-4 sm:flex sm:flex-row items-center gap-2 z-50">
-            <a href="mailto:yudai3.1415926@gmail.com" class="bg-pink-400 text-white rounded-full px-4 py-2 text-xs shadow hover:bg-pink-500 transition flex items-center gap-2 ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a3 3 0 0 0 3.22 0L22 8m-19 8V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                <p class="hidden sm:block">Email</p>
-            </a>
-            <a href="https://github.com/neko3141592" target="_blank" rel="noopener" class="bg-gray-900 text-white rounded-full px-4 py-2 text-xs shadow hover:bg-gray-700 transition flex items-center gap-2 mt-2 sm:mt-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                <p class="hidden sm:block">GitHub</p>
-            </a>
+            </section>
         </div>
-</body>
+        </main>
+            <footer class="bg-gray-100 py-6">
+                <div class="container mx-auto px-4 flex flex-col justify-between items-center">
+                    <span class="text-sm ">&copy; 2025 neko3141592</span>
+                </div>
+            </footer>
+            <div class="fixed bottom-4 right-4 sm:flex sm:flex-row items-center gap-2 z-50">
+                <a href="mailto:yudai3.1415926@gmail.com" class="bg-pink-400 text-white rounded-full px-4 py-2 text-xs shadow hover:bg-pink-500 transition flex items-center gap-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a3 3 0 0 0 3.22 0L22 8m-19 8V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <p class="hidden sm:block">Email</p>
+                </a>
+                <a href="https://github.com/neko3141592" target="_blank" rel="noopener" class="bg-gray-900 text-white rounded-full px-4 py-2 text-xs shadow hover:bg-gray-700 transition flex items-center gap-2 mt-2 sm:mt-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                    <p class="hidden sm:block">GitHub</p>
+                </a>
+            </div>
+    </body>
 </html>
